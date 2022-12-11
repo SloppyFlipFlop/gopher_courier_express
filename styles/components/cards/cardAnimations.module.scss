@@ -1,0 +1,21 @@
+@use "./../../utils/vars.scss" as *;
+
+.section_wrapper {
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.hideLeft {
+  // move section out of view
+  transform: translateX(-100%);
+}
+
+.hideRight {
+  // move section out of view
+  transform: translateX(100%);
+}
+
+.slidein {
+  // move section into view
+  transform: translateX(0);
+}

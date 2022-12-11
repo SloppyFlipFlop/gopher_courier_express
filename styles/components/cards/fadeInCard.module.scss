@@ -1,0 +1,145 @@
+@use "./../../utils/vars.scss" as *;
+
+.card {
+  position: relative;
+  // z-index: -1;
+  border-radius: 1rem;
+  height: fit-content;
+  margin: 1rem 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 1s;
+  opacity: 0;
+  width: fit-content;
+
+  // transform: translateY(200px);
+  // overflow: auto;
+  padding: 1rem 0.5rem;
+
+  .card_image {
+    // make the image cover the entire card width
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .card_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color: $action;
+  }
+  .card_description {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    color: $black;
+  }
+  .card_button {
+    width: fit-content;
+    height: 2rem;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+    color: $smoke-white;
+
+    &:hover {
+      background: yellow;
+      color: $black;
+    }
+  }
+}
+
+.card.show {
+  opacity: 1;
+}
+
+// tablet styles
+@media (min-width: 825px) {
+  // .card {
+  //   width: 40%;
+  // }
+}
+
+// desktop styles
+@media (min-width: $desktop-width) {
+  .card {
+    height: fit-content;
+    margin: 1rem;
+    box-shadow: none;
+    // box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 15%);
+    transition: 1s;
+    opacity: 0;
+    // min-width: 5rem;
+    width: 20%;
+    // min-height: 30rem;
+    display: flex;
+    padding: 1rem 0.5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    position: relative;
+    // z-index: -1;
+    border-radius: 1rem;
+    // height: fit-content;
+    // margin: 1rem;
+    // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    // transition: 1s;
+    // opacity: 0;
+    // width: 20%;
+    // min-height: 30rem;
+
+    // transform: translateY(200px);
+    // overflow: auto;
+    padding: 1rem 0.5rem;
+
+    .card_image {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      // center the image
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card_title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      color: $action;
+      width: 100%;
+    }
+    .card_description {
+      font-size: 1.2rem;
+      margin: 0;
+      // text-align: center;
+      color: $black;
+    }
+    .card_button {
+      width: fit-content;
+      height: 2rem;
+      background: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      margin: 0.5rem auto;
+      color: $smoke-white;
+
+      &:hover {
+        background: yellow;
+        color: $black;
+      }
+    }
+  }
+}

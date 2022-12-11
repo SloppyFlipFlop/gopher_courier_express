@@ -1,0 +1,23 @@
+.banner {
+  background: red;
+  animation: createBox 0.25s;
+  width: 100vw;
+  height: 98px;
+}
+
+// desktop styles
+@media (min-width: 768px) {
+  .banner {
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

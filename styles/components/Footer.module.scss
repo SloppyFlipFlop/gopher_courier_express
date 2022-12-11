@@ -1,0 +1,33 @@
+@use "./../utils/vars.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  padding: 0.5rem;
+  width: -webkit-fill-available;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: $white;
+}
+
+.copyright {
+  .companyName {
+    font-size: 0.8rem;
+    text-align: center;
+    color: $white;
+
+    &::before {
+      content: "© 2020 ";
+    }
+
+    &::after {
+      content: " - All rights reserved";
+    }
+  }
+}

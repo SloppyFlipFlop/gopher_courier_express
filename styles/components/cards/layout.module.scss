@@ -1,0 +1,116 @@
+@use "./../../utils/vars.scss" as *;
+
+.card {
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  border-radius: 1rem;
+  margin: 1rem 0.25rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-style: italic;
+
+  // if .card doesn't have a img tag in it, apply margin to .title
+  &:not(:has(img)) {
+    .title {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .title {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0.5rem;
+  }
+
+  img {
+    padding: 1rem !important;
+    border-radius: 2rem;
+  }
+
+  .image {
+    padding: 1rem !important;
+    border-radius: 2rem;
+  }
+
+  .number,
+  .link {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .card_button {
+    text-decoration: underline;
+    font-style: italic;
+  }
+
+  p {
+    margin: 0.25rem;
+  }
+}
+
+// desktop styles
+@media (min-width: $desktop-width) {
+  .card {
+    background: white;
+    box-shadow: none;
+    width: auto;
+    height: fit-content;
+    border-radius: 1rem;
+    margin: 1rem 0.25rem;
+    text-align: left;
+    padding: 0.5rem;
+    font-style: italic;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    // if .card doesn't have a img tag in it, apply margin to .title
+    &:not(:has(img)) {
+      .title {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .title {
+      color: red;
+      text-align: left;
+      font-weight: bold;
+      font-size: 28px;
+      width: 100%;
+      // margin: 0.5rem;
+      // padding: 0 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      padding: 1rem !important;
+      border-radius: 2rem;
+    }
+
+    .image {
+      padding: 1rem !important;
+      border-radius: 2rem;
+    }
+
+    .number,
+    .link {
+      color: red;
+      text-decoration: underline;
+    }
+
+    .card_button {
+      text-decoration: underline;
+      font-style: italic;
+    }
+
+    p {
+      margin: 0.25rem;
+      padding: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@use "./../utils/vars.scss" as *;
+
+.container {
+  margin-top: 5rem !important;
+}
+
+.contactform_container {
+  background: white;
+  // box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  border-radius: 1rem;
+  margin: auto;
+  text-align: center;
+  padding: 0.5rem;
+  font-style: italic;
+
+  .title {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    .info_item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      align-content: center;
+
+      margin: 1rem;
+
+      .icon {
+        font-size: 20px;
+        color: red;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .item_title {
+        padding: 0 0 0 1rem;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #45505b;
+      }
+
+      a {
+        padding: 0 0 0 1rem;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #728394;
+      }
+    }
+  }
+
+  .formgroup {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: red;
+      text-align: left;
+      margin: 0.5rem 1rem;
+      text-decoration: underline;
+      font-style: italic;
+    }
+
+    input,
+    textarea {
+      margin: 0.5rem 1rem;
+      padding: 0.5rem;
+      border: 1px solid black;
+      border-radius: 0.5rem;
+
+      &:focus {
+        outline: none;
+        border: 2px solid red;
+      }
+    }
+
+    button {
+      margin: 0.5rem 1rem;
+      padding: 0.5rem;
+      border: 1px solid black;
+      border-radius: 0.5rem;
+      background: red;
+      color: white;
+      text-decoration: underline;
+      font-style: italic;
+    }
+  }
+
+  .link {
+    color: red;
+    text-decoration: underline;
+  }
+}

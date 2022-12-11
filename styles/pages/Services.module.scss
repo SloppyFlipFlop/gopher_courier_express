@@ -1,0 +1,90 @@
+@use "./../utils/vars.scss" as *;
+
+.container {
+  margin-top: 5rem;
+
+  .title {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0.5rem;
+  }
+
+  // .card {
+  //   background: white;
+  //   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  //   border-radius: 1rem;
+  //   margin: 1rem 0.25rem;
+  //   text-align: center;
+  //   padding: 0.5rem;
+  //   font-style: italic;
+
+  //   .title {
+  //     color: red;
+  //     text-align: center;
+  //     font-weight: bold;
+  //     font-size: 17px;
+  //   }
+
+  //   .image {
+  //     padding: 1rem !important;
+  //     border-radius: 2rem;
+  //   }
+
+  //   .card_button {
+  //     text-decoration: underline;
+  //     font-style: italic;
+  //   }
+  // }
+
+  .block {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+
+    padding: 1rem;
+
+    margin: 1rem 0.25rem;
+    border-radius: 0.5rem;
+
+    a {
+      text-decoration: underline;
+      font-style: italic;
+      // padding-left: 15px;
+      color: red;
+      // &::before {
+      //   content: "Call us:";
+      //   // remove underline
+      //   display: inline-block;
+      //   text-decoration: none;
+      //   font-style: none;
+
+      //   font-size: 1.5rem;
+      //   font-weight: bold;
+      //   // color: white;
+      // }
+    }
+  }
+
+  a {
+    color: red;
+    text-decoration: underline;
+  }
+
+  ul {
+    text-align: left;
+    // padding: 0;
+    margin: 0.75rem 1rem;
+  }
+
+  p {
+    text-align: center;
+    margin: 0 1rem;
+    a {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+}
