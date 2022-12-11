@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import favicon from "./../public/images/logo.png";
+import favicon from "./../public/logo.png";
 
 const HeadTags = ({ title }) => {
   return (
