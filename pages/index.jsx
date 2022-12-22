@@ -5,14 +5,12 @@ import Image from "next/image";
 
 // cards
 import FadeInCard from "../components/cards/FadeInCard";
-import LeftSlideInCard from "../components/cards/slide_in_cards/LeftSlideInCard";
 
 //images
 import medImage from "./../public/images/Medical-Deliveries.jpg";
 import mailRunImage from "./../public/images/Mail-Runs.jpg";
 import constructionImage from "./../public/images/For-Construction.jpg";
 import specialtiesImage from "./../public/images/Service-Specialties.jpg";
-import RightSlideInCard from "../components/cards/slide_in_cards/RightSlideInCard";
 
 import Banner from "../components/Banner";
 import boxs from "../public/images/boxes.png";
@@ -21,14 +19,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.about_container}>
-        {/* <LeftSlideInCard
-          content={
-            <h1 className={styles.title}>Welcome to Gopher Courier Express</h1>
-          }
-        /> */}
-
-        {/* <RightSlideInCard content={<h3>sadsada</h3>} /> */}
-
         <Banner />
       </div>
 
@@ -72,7 +62,13 @@ export default function Home() {
       </div>
 
       <div className={styles.order}>
-        <Image src={boxs} alt="box images" id={styles.boxesImg} />
+        <Image
+          src={boxs}
+          alt="box images"
+          id={styles.boxesImg}
+          width={500}
+          height={100}
+        />
         <h3>TRUST THE PROFESSIONALS</h3>
         <h1 className={`${styles.important}`}>ON TIME. EVERY TIME</h1>
 

@@ -1,6 +1,4 @@
 import styles from "./../styles/pages/Login.module.scss";
-
-// import Image from "next/image";
 import Banner from "../components/Banner";
 
 // images

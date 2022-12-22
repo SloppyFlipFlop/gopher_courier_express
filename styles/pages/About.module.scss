@@ -3,12 +3,6 @@
 .container {
   margin-top: 5rem !important;
 
-  // .section {
-  // p {
-  // text-align: center;
-  // }
-  // }
-
   .title {
     color: red;
     text-align: center;
@@ -42,28 +36,7 @@
     .about_container {
       display: flex;
       flex-direction: column;
-      // flex-wrap: wrap;
-      // justify-content: space-evenly;
       width: 100vw;
-      // .section {
-      //   display: flex;
-      //   justify-content: space-between;
-      //   align-items: center;
-      //   flex-direction: row;
-      //   margin: 0 2rem;
-
-      //   p {
-      //     text-align: left;
-      //   }
-      // }
-
-      // .title {
-      //   color: red;
-      //   text-align: center;
-      //   font-weight: bold;
-      //   font-size: 28px;
-      //   margin: 0.5rem;
-      // }
     }
 
     p {

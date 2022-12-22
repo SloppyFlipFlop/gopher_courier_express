@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-
-// install nodemailer
+import axios from "axios";
 
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
@@ -23,15 +21,13 @@ export default function About() {
       formData[field.name] = field.value;
     });
 
-    console.log(formData);
-
-    fetch("/api/mail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    axios
+      .post("http://localhost:3000/api/mail", { formData })
+      .then((res) => {
+        // clear the entire form
+        document.getElementById("myForm").reset();
+      })
+      .catch((e) => console.log(e));
   };
 
   return (
@@ -149,6 +145,7 @@ export default function About() {
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                id="myForm"
               >
                 <input type="hidden" />
                 <div className={styles.formgroup}>

@@ -3,8 +3,7 @@ import styles from "./../styles/pages/About.module.scss";
 import cardStyles from "./../styles/components/cards/layout.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-
-// import Banner from "../public/images/banner.jpg";
+import React from "react";
 
 //images
 import trucks from "./../public/images/trucks.jpg";
@@ -33,7 +32,11 @@ export default function About() {
         <CardWithLink
           Children={
             <>
-              <Image src={trucks} alt="trucks" />
+              <Image
+                src={trucks}
+                alt="trucks"
+                style={{ width: "100%", height: "100%", position: "relative" }}
+              />
               <h3 className={cardStyles.title}>
                 Gopher will deliver complete satisfaction
               </h3>

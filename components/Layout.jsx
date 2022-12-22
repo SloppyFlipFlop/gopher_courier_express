@@ -4,7 +4,7 @@ import HeadTags from "./HeadTags";
 
 import styles from "./../styles/components/Layout.module.scss";
 
-const Layout = ({ title, children }) => {
+const Layout = ({ children }) => {
   return (
     <div className={styles.page_container}>
       <HeadTags />

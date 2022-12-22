@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { Children } from "react";
-
 import { useInView } from "react-intersection-observer";
 
 import fadeStyles from "./../../styles/components/cards/fadeInCard.module.scss";

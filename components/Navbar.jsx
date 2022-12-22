@@ -11,15 +11,11 @@ import { BsChatLeftQuote, BsBriefcase, BsPeople } from "react-icons/bs";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
-// import { Router } from "next/router";
-
 import Link from "next/link";
 
 import Image from "next/image";
 
 import bigLogo from "./../public/logo.svg";
-// import smallerLogo from "./../public/logo_star.svg";
-import { Router } from "next/router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,27 +28,6 @@ const Navbar = () => {
       document.body.style.overflow = "unset";
     }
   }, [isOpen]);
-
-  // get the logo
-
-  // const [isScrolled, setIsScrolled] = useState(false);
-
-  // // change the logo when the user scrolls past the header
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 100) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   return (
     <nav className={styles.container}>

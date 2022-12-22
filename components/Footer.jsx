@@ -1,7 +1,5 @@
 import styles from "./../styles/components/Footer.module.scss";
 
-import { AiOutlineCopyrightCircle } from "react-icons/ai";
-
 const Footer = () => {
   return (
     <footer className={styles.container}>

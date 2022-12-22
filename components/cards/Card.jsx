@@ -20,7 +20,13 @@ const Card = ({ title, image, alt, description, link, linkText }) => {
       }`}
     >
       <div className={styles.title}>{title}</div>
-      {image && <Image src={image} alt={alt} />}
+      {image && (
+        <Image
+          src={image}
+          alt={alt}
+          style={{ width: "100%", height: "100%", position: "relative" }}
+        />
+      )}
       {description.map((paragraph, index) => (
         <div key={index}>
           <p key={index}>{paragraph}</p>

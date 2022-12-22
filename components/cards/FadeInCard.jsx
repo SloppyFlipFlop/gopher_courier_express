@@ -11,7 +11,13 @@ const FadeInCard = ({ title, image, imageDes, description, linkName }) => {
 
   return (
     <div ref={myRef} className={`${styles.card} ${inView ? styles.show : ""}`}>
-      <Image src={image} alt={imageDes} className={styles.card_image} />
+      <Image
+        src={image}
+        alt={imageDes}
+        className={styles.card_image}
+        width={"300"}
+        height={"300"}
+      />
       <h1 className={styles.card_title}>{title}</h1>
       <p className={styles.card_description}>{description}</p>
       <Link href="/services">

@@ -53,10 +53,6 @@
         padding: 0.5rem;
         margin-right: 0.5rem;
 
-        // position: fixed;
-        // right: 0.5rem;
-        // top: 1rem;
-
         .icon {
           font-size: 28px;
           color: $black;
@@ -97,7 +93,6 @@
       justify-content: center;
 
       .menu_item {
-        // list-style: none;
         width: 90%;
         display: flex;
       }
@@ -146,15 +141,11 @@
     position: fixed;
     width: 100%;
     background: white;
-    // position: fixed;
-    // width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    // margin: 0.5rem 1rem;
     z-index: 1000;
-    // padding: 0 1rem;
 
     #menu_container {
       margin: 0 1rem 0 0;
@@ -165,8 +156,6 @@
       justify-content: space-between;
       align-content: center;
       width: 70vw;
-
-      // width: 45%;
       position: sticky;
       .item_wrapper {
         display: flex;
@@ -181,6 +170,7 @@
         &:hover {
           color: $action;
           opacity: 0.7;
+          cursor: pointer;
         }
 
         .item_name {
