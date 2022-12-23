@@ -3,14 +3,11 @@ import styles from "./../styles/pages/Testimonals.module.scss";
 import cardStyles from "./../styles/components/cards/layout.module.scss";
 
 import Link from "next/link";
-import Banner from "../components/Banner";
 import CardWithLink from "../components/cards/CardWithLink";
 
 export default function About() {
   return (
     <div className={styles.container}>
-      <Banner />
-
       <CardWithLink
         Children={
           <>

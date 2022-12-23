@@ -6,7 +6,6 @@ import Banner from "../components/Banner";
 export default function Login() {
   return (
     <div className={styles.container}>
-      <Banner />
       <h1 className={styles.title}>Customer Login</h1>
       <p>
         Log in below to track all of your Gopher Courier Express package
