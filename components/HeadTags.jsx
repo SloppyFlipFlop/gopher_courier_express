@@ -4,7 +4,8 @@ const HeadTags = () => {
   return (
     <Head>
       <title>
-        Courier Delivery Services | Arizona - Gopher Courier Express
+        {/* Courier Delivery Services | Arizona - Gopher Courier Express */}
+        Courier Delivery Service | Phoenix Arizona - Gopher Courier Express
       </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
