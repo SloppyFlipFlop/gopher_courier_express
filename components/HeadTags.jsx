@@ -19,6 +19,10 @@ const HeadTags = () => {
         name="description"
         content="Make sure your shipments get where they are going with our courier delivery services in Arizona. We provide the solutions you need for all of your packages."
       />
+      <meta
+        name="google-site-verification"
+        content="kCwJrfgWYN2bBm6tT32TQtDyufTdXv6GGrMk2Vn8Tvs"
+      />
       <link rel="icon" href={"/favicon.svg"} />
     </Head>
   );
