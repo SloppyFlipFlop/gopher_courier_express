@@ -10,12 +10,10 @@ import trucks from "./../public/images/trucks.jpg";
 import drivers from "./../public/images/drivers.jpg";
 import Card from "../components/cards/Card";
 import CardWithLink from "../components/cards/CardWithLink";
-import Banner from "../components/Banner";
 
 export default function About() {
   return (
     <div className={styles.container}>
-      <Banner />
       <div className={styles.about_container}>
         <Card
           title={"About Us"}

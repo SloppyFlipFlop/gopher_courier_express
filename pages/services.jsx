@@ -1,7 +1,6 @@
 import styles from "./../styles/pages/Services.module.scss";
 
 //images
-import Banner from "../components/Banner";
 import servicesImage from "../public/images/services_picture.jpg";
 import package_picture from "../public/images/package_image.jpg";
 import Link from "next/link";
@@ -9,32 +8,18 @@ import Link from "next/link";
 // react icons
 import Card from "../components/cards/Card";
 import CardWithLink from "../components/cards/CardWithLink";
+import FadeInCard from "../components/cards/FadeInCard";
 
 const services = () => {
   return (
     <div className={styles.container}>
-      <Banner />
-      <h1 className={styles.title}>
-        Prompt and Dependable Courier Services in Arizona
-      </h1>
-
       <Card
+        title={"Prompt and Dependable Courier Services in Arizona"}
         description={[
           `By exceeding customer expectations and meriting
-        trustworthy relationships, we
-        have been able to achieve and maintain our reputation in our industry of
-        which we are very proud.`,
-        ]}
-      />
-
-      <Card
-        image={servicesImage}
-        alt="services"
-        description={[
-          `At Gopher Courier Express, we make certain that your package gets
-      safely to its destination on time. We provide courier services in
-      Arizona and across the South West with non-stop direct deliveries by
-      car or van for everything from small packages up to loaded pallets.`,
+          trustworthy relationships, we
+          have been able to achieve and maintain our reputation in our industry of
+          which we are very proud.`,
         ]}
       />
 
