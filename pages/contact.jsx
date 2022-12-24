@@ -108,11 +108,9 @@ export default function About() {
 
               <div className={styles.form__disclaimer}>
                 <p>
-                  By submitting this form, you agree to our{" "}
-                  <Link href="/privacy-policy">
-                    <a className={`${styles.link}`}>Privacy Policy</a>
-                  </Link>
-                  .
+                  By submitting this form, you agree to allow us to use the
+                  information submitted to send an email on you&apos;re behalf
+                  to us.
                 </p>
 
                 <p>
